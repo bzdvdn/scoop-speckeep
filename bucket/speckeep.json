@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "description": "Lightweight Spec-Driven Development kit for development agents and humans",
+  "homepage": "https://github.com/bzdvdn/speckeep",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/bzdvdn/speckeep/releases/download/v1.0.0/speckeep_v1.0.0_windows_amd64.zip",
+      "hash": "c5a8d38e2566c021f8951e2d909df66b4b6026744be4616b6932b8e2fcd935c6"
+    },
+    "arm64": {
+      "url": "https://github.com/bzdvdn/speckeep/releases/download/v1.0.0/speckeep_v1.0.0_windows_arm64.zip",
+      "hash": "fb0a2fda6b96c7eb4cb20cd3de47236f1cf57cdd95d1eca9f9df069c8c38e8c3"
+    }
+  },
+  "bin": "speckeep.exe",
+  "checkver": {
+    "github": "https://github.com/bzdvdn/speckeep"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/bzdvdn/speckeep/releases/download/v$version/speckeep_v$version_windows_amd64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/bzdvdn/speckeep/releases/download/v$version/speckeep_v$version_windows_arm64.zip"
+      }
+    }
+  }
+}
